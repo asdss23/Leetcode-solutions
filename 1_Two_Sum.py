@@ -6,3 +6,22 @@ class Solution(object):
                 if nums[i]+nums[j] == target:
                     return [i,j]
         return []
+
+# using hash map
+
+class Solution(object):
+    def twoSum(self, nums, target):
+
+        d = {}
+
+        for i in range(len(nums)):
+            n = nums[i]
+            diff = target - n
+            if diff in d:
+                return [d[diff], i]
+            else:
+                d[n] = i
+
+
+        
+        
