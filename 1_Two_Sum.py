@@ -7,7 +7,7 @@ class Solution(object):
                     return [i,j]
         return []
 
-# using hash map
+# using hash maps {}
 
 class Solution(object):
     def twoSum(self, nums, target):
